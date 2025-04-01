@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
-import Link from "next/link";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaArrowRight, FaCode, FaDatabase, FaServer, FaGraduationCap, FaLaptopCode, FaUserTie, FaGithub } from "react-icons/fa";
@@ -54,7 +53,7 @@ export default function Home() {
                   transition: { duration: 0.2 }
                 }}
               >
-                Hi, I'm Edgar
+                Hi, I	&apos;m Edgar
               </motion.span>
               <motion.span 
                 className="block mt-2 text-transparent bg-clip-text drop-shadow-[0_0_8px_rgba(59,130,246,0.5)]"
@@ -216,12 +215,12 @@ export default function Home() {
                 <div>
                   <h2 className="text-2xl font-bold mb-4">Edgar</h2>
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    I'm a self-taught developer with over 10 years of experience exploring various technologies and programming languages. 
+                    I	&apos;m a self-taught developer with over 10 years of experience exploring various technologies and programming languages. 
                     My journey began out of curiosity and has evolved into a passion for creating efficient, user-friendly applications.
                   </p>
                   <p className="text-gray-600 dark:text-gray-400">
-                    Now with AI as my coding partner, I'm excited to take on new challenges and push the boundaries of what I can create. 
-                    I'm constantly learning and adapting to new technologies to stay at the forefront of development trends.
+                    Now with AI as my coding partner, I&apos;m excited to take on new challenges and push the boundaries of what I can create. 
+                    I&apos;m constantly learning and adapting to new technologies to stay at the forefront of development trends.
                   </p>
                 </div>
               </div>
@@ -380,7 +379,7 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-4">My Expertise</h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              With a decade of self-learning, I've developed skills across the entire development stack.
+              With a decade of self-learning, I&apos;ve developed skills across the entire development stack.
             </p>
           </motion.div>
           
@@ -583,8 +582,8 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-6">Let's Work Together</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-              I'm currently available for freelance work and full-time positions.
-              If you have a project that needs my expertise, let's talk about it!
+              I&apos;m currently available for freelance work and full-time positions.
+              If you have a project that needs my expertise, let&apos;s talk about it!
             </p>
             
             <div className="flex flex-col md:flex-row gap-8 mt-12 text-left">
