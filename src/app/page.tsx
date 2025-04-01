@@ -580,7 +580,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold mb-6">Let's Work Together</h2>
+            <h2 className="text-3xl font-bold mb-6">Let&apos;s Work Together</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
               I&apos;m currently available for freelance work and full-time positions.
               If you have a project that needs my expertise, let&apos;s talk about it!
