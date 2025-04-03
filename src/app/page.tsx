@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { FaArrowRight, FaCode, FaDatabase, FaServer, FaGraduationCap, FaLaptopCode, FaUserTie, FaGithub } from "react-icons/fa";
 import ProjectThumbnail from "@/components/ProjectThumbnail";
 import GradientBackground from "@/components/ParticleBackground";
+import ContactForm from "@/components/ContactForm";
 
 // Hardcoded blue theme
 const theme = {
@@ -586,76 +587,8 @@ export default function Home() {
               If you have a project that needs my expertise, let&apos;s talk about it!
             </p>
             
-            <div className="flex flex-col md:flex-row gap-8 mt-12 text-left">
-              <div className="md:w-1/2 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold mb-4">Contact Information</h3>
-                <p className="mb-4 text-gray-600 dark:text-gray-400">
-                  Feel free to reach out to me through any of these channels:
-                </p>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-medium">Email</h4>
-                    <p className="text-blue-500">your.email@example.com</p>
-                  </div>
-                  <div>
-                    <h4 className="font-medium">Location</h4>
-                    <p className="text-gray-600 dark:text-gray-400">San Francisco Bay Area, California</p>
-                  </div>
-                  <div>
-                    <h4 className="font-medium">Social</h4>
-                    <div className="flex gap-4 mt-2">
-                      <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 text-xl">
-                        <FaGithub />
-                      </a>
-                      <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 text-xl">
-                        <FaCode />
-                      </a>
-                      <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-blue-500 text-xl">
-                        <FaLaptopCode />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="md:w-1/2 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold mb-4">Send a Message</h3>
-                <form className="space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-1">Name</label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-2 border rounded-md dark:bg-gray-700 dark:border-gray-600"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-1">Email</label>
-                    <input
-                      type="email"
-                      className="w-full px-4 py-2 border rounded-md dark:bg-gray-700 dark:border-gray-600"
-                      placeholder="Your email"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-1">Message</label>
-                    <textarea
-                      className="w-full px-4 py-2 border rounded-md dark:bg-gray-700 dark:border-gray-600"
-                      rows={4}
-                      placeholder="Your message"
-                    ></textarea>
-                  </div>
-                  <div>
-                    <button
-                      type="button"
-                      className="px-6 py-3 text-white rounded-md transition-colors duration-300"
-                      style={{ backgroundColor: theme.primary }}
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </form>
-              </div>
+            <div className="flex justify-center mt-12">
+              <ContactForm theme={theme} />
             </div>
           </motion.div>
         </div>
