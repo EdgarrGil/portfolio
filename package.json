@@ -2,6 +2,7 @@
   "name": "edgar-portfolio",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Professional portfolio website for Edgar, a self-taught full-stack developer with 10+ years of experience",
   "author": "Edgar",
   "scripts": {
