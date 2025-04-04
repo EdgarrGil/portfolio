@@ -60,18 +60,22 @@ export default function ContactForm({ theme }: ContactFormProps) {
       // 1. Sign up for EmailJS (https://www.emailjs.com/)
       // 2. Create an Email Template with {{from_name}}, {{from_email}}, and {{message}} variables
       // 3. Update these values with your actual EmailJS account information
-      const serviceId = 'YOUR_SERVICE_ID'; // Get this from EmailJS dashboard
-      const templateId = 'YOUR_TEMPLATE_ID'; // Get this from EmailJS dashboard
-      const publicKey = 'YOUR_PUBLIC_KEY'; // Get this from EmailJS dashboard
+      const serviceId = 'service_ihje29v'; // Get this from EmailJS dashboard
+      const templateId = 'template_cxt5368'; // Get this from EmailJS dashboard
+      const publicKey = 'ybbouThlxy4Wq-Yfo'; // Get this from EmailJS dashboard
       
-      if (!formRef.current) {
-        throw new Error('Form reference is not available');
-      }
+      // Prepare EmailJS data
+      const emailJSData = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_email: 'edgarrafaelgil@gmail.com'
+      };
       
-      const result = await emailjs.sendForm(
+      const result = await emailjs.send(
         serviceId,
         templateId,
-        formRef.current,
+        emailJSData,
         publicKey
       );
       
@@ -123,7 +127,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
             <label className="block text-sm font-medium mb-2">Name</label>
             <input
               type="text"
-              name="from_name"
+              name="name"
               value={formData.name}
               onChange={handleInputChange}
               className="w-full px-4 py-3 border rounded-md dark:bg-gray-700 dark:border-gray-600"
@@ -134,7 +138,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
             <label className="block text-sm font-medium mb-2">Email</label>
             <input
               type="email"
-              name="from_email"
+              name="email"
               value={formData.email}
               onChange={handleInputChange}
               className="w-full px-4 py-3 border rounded-md dark:bg-gray-700 dark:border-gray-600"
@@ -152,8 +156,6 @@ export default function ContactForm({ theme }: ContactFormProps) {
               placeholder="Your message"
             ></textarea>
           </div>
-          {/* Hidden field for recipient email */}
-          <input type="hidden" name="to_email" value="edgarrafaelgil@gmail.com" />
           
           <div className="text-center">
             <button

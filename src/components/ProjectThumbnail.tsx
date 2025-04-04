@@ -34,6 +34,7 @@ const ProjectThumbnail = ({ title, projectUrl, height = "h-48" }: ProjectThumbna
             src={getThumbnailUrl(projectUrl)}
             alt={`${title} project screenshot`}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className={`object-cover transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
             onError={handleImageError}
             onLoad={() => setIsLoading(false)}

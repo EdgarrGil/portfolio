@@ -163,6 +163,7 @@ export default function Home() {
                   src="/avatar.jpg"
                   alt="Edgar's Profile Avatar"
                   fill
+                  sizes="(max-width: 768px) 18rem, 24rem"
                   className="object-cover"
                   priority
                 />
@@ -208,6 +209,7 @@ export default function Home() {
                       src="/avatar.jpg"
                       alt="Edgar's Profile Avatar"
                       fill
+                      sizes="10rem"
                       className="object-cover"
                       priority
                     />
