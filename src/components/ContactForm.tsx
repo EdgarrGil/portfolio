@@ -114,7 +114,7 @@ export default function ContactForm({ theme }: ContactFormProps) {
       
       {formStatus.submitted ? (
         <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-          <p>Thank you for your message! I'll get back to you soon.</p>
+          <p>Thank you for your message! I&apos;ll get back to you soon.</p>
         </div>
       ) : (
         <form className="space-y-6" onSubmit={handleSubmit} ref={formRef}>

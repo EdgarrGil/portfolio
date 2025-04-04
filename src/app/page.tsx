@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FaArrowRight, FaCode, FaDatabase, FaServer, FaGraduationCap, FaLaptopCode, FaUserTie, FaGithub } from "react-icons/fa";
+import { FaArrowRight, FaCode, FaDatabase, FaServer, FaGraduationCap, FaLaptopCode, FaUserTie } from "react-icons/fa";
 import ProjectThumbnail from "@/components/ProjectThumbnail";
 import GradientBackground from "@/components/ParticleBackground";
 import ContactForm from "@/components/ContactForm";
