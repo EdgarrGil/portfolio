@@ -1,4 +1,5 @@
-'use client';
+/* eslint-disable react/no-unescaped-entities */
+"use client";
 
 import { useState, useRef, FormEvent } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
